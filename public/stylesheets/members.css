@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+  color: white;
+  /* display: flex; */
+
+}
+.well {
+  background-color: black;
+}
+
+.row {
+  align-content: center;
+}
+
+.navbar {
+  background-color: black;
+  height: 55;
+  /* width: auto;
+  position: fixed;
+  position: top; */
+
+}
+
+.modal-content {
+  background-color: rgb(26, 29, 43);
+  
+}
+
+.close {
+  color: red;
+
+}
+
+.navbar-text {
+  text-align: center;
+}
+
+.navbar-logout {
+  text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 a {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #00FFFF;
+  font-size: 18px;
+
+}
+
+.btn-default {
+  background-color: #09f920;
+  border-color: #09f920;
+  color: black;
+}
+

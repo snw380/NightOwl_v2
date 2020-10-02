@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Night Owl</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link href="stylesheets/members.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NavBar -->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./login.html">
+          <img src="assets/night_owl1.png" width="175" height="50" alt="">
+        </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">GamerTag</a>
+          <span id="tag"></span>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="./login.html"><span class="glyphicon glyphicon-log-out"></span> LogOut</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main container -->
+
+  <!-- K/D Ratio -->
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-3 well">
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+              <h5 href="#">K/D Ratio</h5>
+              <p class="card-text">
+                <span id="kd"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kills -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+              <h5 href="#">W/L Ratio</h5>
+              <p class="card-text">
+                <span id="wl"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deaths -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+              <h5 href="#">Total Time Played</h5>
+              <p class="card-text">
+                <span id="ttp"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Player Goals -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+              <h5 href="#">total Games Played</h5>
+              <p class="card-text">
+                <span id="tgp"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Compare stats -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+              <h5 href="#">Accuracy</h5>
+            <p class="card-text">
+              <span id="acc"></span>
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center element -->
+      <div class="col-md-6">
+        <!-- <div style="width:100%;height:0;padding-bottom:56%;position:relative;"> -->
+        <iframe src="https://giphy.com/embed/d8i1XJjV2Ym53KK0Dn" width="500" height="700" style="position:centered"
+          frameBorder="0" class="giphy-embed" allowFullScreen>
+        </iframe>
+        <!-- </div> -->
+        <!-- <p>
+          <a href="https://giphy.com/gifs/call-of-duty-modern-warfare-captain-price-d8i1XJjV2Ym53KK0Dn">via GIPHY</a>
+        </p> -->
+
+
+        <!-- <iframe class="gif" src="https://giphy.com/embed/kOCV8JH59iqpW96JN6" width="250" height="500" frameBorder="0"
+          class="giphy-embed" allowFullScreen>
+        </iframe> -->
+      </div>
+
+      <!-- Right Column -->
+
+      <!-- Play Recomendations -->
+      <div class="col-md-3 well">
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+
+              <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">PLAY RECCOMENDATIONS</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Become a premium Owl!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Reserved for premium Owls.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+              <img class="card-img-top" src="assets/gameplay.png" alt="Card image cap">
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Recomendations -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+
+              <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">GAME RECCOMENDATIONS</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Become a premium Owl!</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Reserved for premium Owls.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+              <img class="card-img-top" src="assets/lockedman.png" alt="Card image cap">
+            </div>
+          </div>
+        </div>
+
+        <!-- Gun Recomendations -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+
+              <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">GUN RECCOMENDATIONS</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Become a premium Owl!</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>These features are reserved for premium Owls.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+              <img class="card-img-top" src="assets/lockedgun.png" alt="Card image cap">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+
+  <script type="text/javascript" src="js/members.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(() => {
+        axios({
+          "method":"GET",
+          "url":"https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/Sunshine%252314256/battle",
+          "headers":{
+          "content-type":"application/octet-stream",
+          "x-rapidapi-host":"call-of-duty-modern-warfare.p.rapidapi.com",
+          "x-rapidapi-key":"2dc88bc862msh01a6273fcbf4194p1e37acjsn0de8a177d74a",
+          "useQueryString":true
+        }
+        })
+        .then((data)=>{
+          $("#tag").text(data.data.username)
+          $("#kd").text(data.data.lifetime.all.properties.kdRatio);
+          $("#wl").text(data.data.lifetime.all.properties.winLossRatio);
+          $("#ttp").text(data.data.lifetime.all.properties.timePlayedTotal);
+          $("#tgp").text(data.data.lifetime.all.properties.gamesPlayed);
+          $("#acc").text(data.data.lifetime.all.properties.accuracy);
+        })
+        .catch((error)=>{
+          console.log(error)
+        })
+      }) 
+      </script>
+</body>
+
+</html>
